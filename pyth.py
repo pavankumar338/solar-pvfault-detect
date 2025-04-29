@@ -16,7 +16,7 @@ st.sidebar.header("Model Input Parameters")
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load(r"C:\Users\pavan\Downloads\decision_tree_model.joblib")
+        model = joblib.load(r"decision_tree_model.joblib")
         return model
     except FileNotFoundError:
         st.error("Model file 'decision_tree_model.joblib' not found. Please ensure it's in the same directory.")
